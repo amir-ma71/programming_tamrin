@@ -1,0 +1,14 @@
+# amirhosseinghasri 10:10
+def wordCount(n, s):
+    word = s.split(" ")
+    words = []
+    for x in word:
+        if len(x) == n:
+          words.append(x)
+    words_count = len(words)
+    print("founded " + str(words_count) + " words with " + str(n) + " letters")
+    print(",".join(words))
+
+x = 4
+s ="Python is good And I love python"
+wordCount(x, s)
